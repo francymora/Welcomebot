@@ -1,1 +1,1 @@
-# Welcomebot
+# welcome-bot
