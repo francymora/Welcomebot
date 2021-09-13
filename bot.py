@@ -18,17 +18,8 @@ def help(updater,context):
 
 def add_group(update: Update, context: CallbackContext):
     for member in update.message.new_chat_members:
-        update.message.reply_text(f'Hello {member.full_name}' + '''Benvenuto in BIT PoliMi!🚀
+        update.message.reply_text(f'Hello {member.full_name}, benvenuto!' 
 
-🎓 Siamo la prima associazione del Politecnico di Milano che si occupa di Bitcoin e crypto. Proponiamo progetti innovativi in grado di formarti su questo nuovo mondo.
-
-📱Social:
-Instagram: https://instagram.com/bitpolimi
-
-📝 Ci sono poche regole da seguire:
-- No scam
-- No trading e finanza 
-- No politica)''')
 
 add_group_handle = MessageHandler(Filters.status_update.new_chat_members, add_group)
 updater.dispatcher.add_handler(add_group_handle)
