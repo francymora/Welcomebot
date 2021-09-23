@@ -25,6 +25,10 @@ def add_group(update: Update, context: CallbackContext):
 📱Social:
 Instagram: https://instagram.com/bitpolimi
 
+
+📚 Materiale utile:
+Mega: https://mega.nz/folder/juphlCAJ#VqPTgjSETFy8POmyW4W1kQ
+
 📝 Ci sono poche regole da seguire:
 - No scam
 - No trading e finanza 
