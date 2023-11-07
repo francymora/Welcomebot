@@ -4,6 +4,10 @@ import os
 
 Token =os.environ.get("BOT_TOKEN",None)
 updater = Updater( Token ,use_context = True )
+def sum(a,b):
+    return a+b
+
+
 
 def start(updater,context):
  updater.message.reply_text('''Hi iam welcome messanger bot 
@@ -36,6 +40,7 @@ Mega: https://mega.nz/folder/juphlCAJ#VqPTgjSETFy8POmyW4W1kQ
 
 def hello(string):
     print(f'Hello {string}')
+
 
 add_group_handle = MessageHandler(Filters.status_update.new_chat_members, add_group)
 updater.dispatcher.add_handler(add_group_handle)
